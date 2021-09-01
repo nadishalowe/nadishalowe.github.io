@@ -1,7 +1,12 @@
 :root {
-  --grey: #444446;
+  --darkGrey: #444446;
   --beige: #EBE7DC;
   --olive: #7F8B81;
+  --lightGrey: #DDDEDC;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 * {
@@ -15,7 +20,8 @@ a {
 
 
 body {
-  font-family: 'Montserrat', 'Cormorant', serif;
+  font-family: 'Montserrat', 'Cormorant', sans-serif;
+  font-weight: 300;
 }
 
 .body-wrapper {
@@ -28,7 +34,7 @@ body {
 .header-container {
   position: relative;
   padding-bottom: 277px;
-  background-color: var(--grey);
+  background-color: var(--darkGrey);
 }
 
 .header-container:before,
@@ -39,17 +45,25 @@ body {
   width: 337px;
   height: 169px;
   background-image: url('../assets/twig.svg');
+  opacity: 0;
 }
 
 .header-container:after {
+  /* width: 735px;
+  height: 586px;
+  background-image: url('../assets/twig-big.svg');
+  transform: rotate(61.24deg);
+  top: 42px;
+  left: -350px; */
   top: 104px;
-  left: 0;
+  animation: fadeIn 700ms ease-in 500ms both;
 }
 
 .header-container:before  {
   transform: rotate(-30deg) scale(-1, 1);
   bottom: 40px;
   right: -30px;
+  animation: fadeIn 700ms ease-in 1250ms both;
 }
 
 .header {
@@ -66,6 +80,10 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: normal;
+}
+
+.links a {
+  font-weight: 300;
 }
 
 .links--social {
@@ -96,6 +114,8 @@ body {
   font-weight: normal;
   z-index: 1;
   font-family: 'Cormorant', 'sans-serif';
+  opacity: 0;
+  animation: fadeIn 700ms ease-in 2000ms both;
 }
 
 .logo:before {
@@ -106,8 +126,9 @@ body {
   height: 220px;
   border-radius: 50%;
   background-color: var(--olive);
-  top: -20px;
+  top: 50%;
   right: -90px;
+  transform: translateY(-50%);
   z-index: -1;
 }
 
@@ -121,8 +142,118 @@ body {
   left: 50%;
   transform: translateX(-50px);
   bottom: 46px;
-  animation: arrowBounce 1000ms infinite;
+  opacity: 0;
+  animation: fadeIn 700ms ease-in 2750ms both, arrowBounce 1000ms infinite;
 }
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.photo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--lightGrey);
+  padding: 78px 0;
+}
+
+.photo {
+  position: relative;
+}
+
+.photo img {
+  vertical-align: top;
+}
+
+.photo-surname,
+.photo-name {
+  position: absolute;
+  display: flex;
+  align-items: baseline;
+  gap: 21px;
+  height: 61px;
+  font-family: 'Cormorant';
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 61px;
+  color: var(--darkGrey);
+}
+
+.photo-surname {
+  bottom: 0;
+  transform-origin: 0 100%;
+  transform: rotate(-90deg);
+}
+
+.photo-name {
+  top: 0;
+  left: 100%;
+  transform-origin: 0 100%;
+  transform: translateY(-100%) rotate(90deg);
+}
+
+.line {
+  width: 357px;
+  height: 3px;
+  background-color: var(--darkGrey);
+}
+
+.photo-surname .line {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.photo-name .line {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--olive);
+  color: var(--beige);
+  overflow: hidden;
+}
+
+.info-inner {
+  max-width: 456px;
+  margin: 160px auto 0;
+}
+
+.info:before {
+  position: absolute;
+  display: block;
+  content: '';
+  background-image: url('../assets/twig.svg');
+  width: 337px;
+  height: 169px;
+  transform: rotate(200deg) scale(1, -1);
+  bottom: -45px;
+  right: -20px;
+}
+
+.info-title {
+  font-family: 'Cormorant', serif;
+  font-size: 50px;
+  line-height: 60px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.info-text {
+  margin-bottom: 15px;
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 300;
+}
+
+
+
 
 @keyframes arrowBounce {
   0% {
@@ -133,5 +264,15 @@ body {
   }
   100% {
     bottom: 46px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
