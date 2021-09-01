@@ -4,13 +4,25 @@
   --olive: #7F8B81;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
+
 body {
   font-family: 'Montserrat', 'Cormorant', serif;
+}
+
+.body-wrapper {
+  min-width: 1200px;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .header-container {
@@ -29,12 +41,12 @@ body {
   background-image: url('../assets/twig.svg');
 }
 
-.header-container:before {
+.header-container:after {
   top: 104px;
   left: 0;
 }
 
-.header-container:after {
+.header-container:before  {
   transform: rotate(-30deg) scale(-1, 1);
   bottom: 40px;
   right: -30px;
