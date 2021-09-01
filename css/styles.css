@@ -1,0 +1,125 @@
+:root {
+  --grey: #444446;
+  --beige: #EBE7DC;
+  --olive: #7F8B81;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Montserrat', 'Cormorant', serif;
+}
+
+.header-container {
+  position: relative;
+  padding-bottom: 277px;
+  background-color: var(--grey);
+}
+
+.header-container:before,
+.header-container:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 337px;
+  height: 169px;
+  background-image: url('../assets/twig.svg');
+}
+
+.header-container:before {
+  top: 104px;
+  left: 0;
+}
+
+.header-container:after {
+  transform: rotate(-30deg) scale(-1, 1);
+  bottom: 40px;
+  right: -30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: var(--beige);
+}
+
+.links {
+  display: grid;
+  padding: 20px;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.links--social {
+  grid-template-columns: auto auto;
+  gap: 25px;
+  text-transform: uppercase;
+}
+
+.links-site {
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 213px;
+  color: var(--beige);
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+.logo {
+  position: relative;
+  margin: 0;
+  font-size: 140px;
+  line-height: 170px;
+  font-weight: normal;
+  z-index: 1;
+  font-family: 'Cormorant', 'sans-serif';
+}
+
+.logo:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-color: var(--olive);
+  top: -20px;
+  right: -90px;
+  z-index: -1;
+}
+
+.arrow {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 70px;
+  width: 16px;
+  background-image: url('../assets/arrow.svg');
+  left: 50%;
+  transform: translateX(-50px);
+  bottom: 46px;
+  animation: arrowBounce 1000ms infinite;
+}
+
+@keyframes arrowBounce {
+  0% {
+    bottom: 46px;
+  }
+  50% {
+    bottom: 32px;
+  }
+  100% {
+    bottom: 46px;
+  }
+}
