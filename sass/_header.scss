@@ -1,0 +1,108 @@
+.header-container {
+  position: relative;
+  padding-bottom: 277px;
+  background-color: var(--darkGrey);
+
+  &:before,
+  &:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 337px;
+    height: 169px;
+    background-image: url('../assets/twig.svg');
+    opacity: 0;
+  }
+
+  &:after {
+    top: 104px;
+    animation: fadeIn 700ms ease-in 500ms both;
+  }
+
+  &:before  {
+    transform: rotate(-30deg) scale(-1, 1);
+    bottom: 40px;
+    right: -30px;
+    animation: fadeIn 700ms ease-in 1250ms both;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: var(--beige);
+}
+
+.links {
+  display: grid;
+  padding: 20px;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: normal;
+
+  a {
+    font-weight: 300;
+  }
+
+  &--social {
+    grid-template-columns: auto auto;
+    gap: 25px;
+    text-transform: uppercase;
+  }
+
+  &--site {
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 213px;
+  color: var(--beige);
+  text-transform: uppercase;
+  z-index: 10;
+
+  &-title {
+    position: relative;
+    margin: 0;
+    font-size: 140px;
+    line-height: 170px;
+    font-weight: normal;
+    z-index: 1;
+    font-family: 'Cormorant', 'sans-serif';
+    opacity: 0;
+    animation: fadeIn 700ms ease-in 2000ms both;
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background-color: var(--olive);
+      top: 50%;
+      right: -90px;
+      transform: translateY(-50%);
+      z-index: -1;
+    }
+  }
+}
+
+.arrow {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 70px;
+  width: 16px;
+  background-image: url('../assets/arrow.svg');
+  left: 50%;
+  transform: translateX(-50px);
+  bottom: 46px;
+  opacity: 0;
+  animation: fadeIn 700ms ease-in 2750ms both, arrowBounce 1000ms infinite;
+}

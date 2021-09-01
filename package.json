@@ -1,0 +1,32 @@
+{
+  "name": "nadishalowe.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nadishalowe/nadishalowe.github.io.git"
+  },
+  "author": "Konstantin Rawle",
+  "license": "ISC",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp"
+  },
+  "type": "module",
+  "devDependencies": {
+    "autoprefixer": "^10.3.3",
+    "babel-preset-env": "^1.7.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "postcss": "^8.3.6",
+    "run-sequence": "^2.2.1",
+    "sass": "^1.38.2"
+  },
+  "dependencies": {}
+}
