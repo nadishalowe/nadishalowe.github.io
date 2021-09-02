@@ -20,13 +20,12 @@ a {
 
 
 body {
-  font-family: 'Montserrat', 'Cormorant', sans-serif;
+  font-family: 'Montserrat', 'Robotto', sans-serif;
   font-weight: 300;
 }
 
 .body-wrapper {
-  min-width: 1200px;
-  max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
   overflow: hidden;
 }

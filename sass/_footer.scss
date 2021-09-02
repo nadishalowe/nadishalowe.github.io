@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 138px;
+  background-color: var(--olive);
+  color: var(--beige);
+
+  &-title {
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-family: 'Cormorant', serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  &-link {
+    font-style: 20px;
+    line-height: 24px;
+
+    &:first-of-type {
+      margin-bottom: 15px;
+    }
+  }
+
+
+  &-social {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+}

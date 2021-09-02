@@ -1,0 +1,13 @@
+.projects {
+  padding: 160px 20px;
+  background-color: var(--darkGrey);
+  color: var(--beige);
+
+  &-wrapper-title {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    padding-left: calc(138px - 20px);
+    margin-bottom: 60px;
+  }
+}
