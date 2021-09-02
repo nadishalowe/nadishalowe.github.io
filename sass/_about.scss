@@ -10,18 +10,20 @@
   background-color: var(--lightGrey);
   padding: 79px 0;
 
-  img {
-    vertical-align: top;
-  }
-
   &-inner {
     position: relative;
+  }
+
+  &-imgage {
+    vertical-align: top;
   }
 
   &-line {
     width: 357px;
     height: 3px;
     background-color: var(--darkGrey);
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
   }
 
   &-surname,
@@ -42,11 +44,6 @@
     bottom: 0;
     transform-origin: 0 100%;
     transform: rotate(-90deg);
-
-    .photo-line {
-      border-top-right-radius: 2px;
-      border-bottom-right-radius: 2px;
-    }
   }
 
   &-name {
@@ -54,11 +51,6 @@
     left: 100%;
     transform-origin: 0 100%;
     transform: translateY(-100%) rotate(90deg);
-
-    .photo-line {
-      border-top-left-radius: 2px;
-      border-bottom-left-radius: 2px;
-    }
   }
 }
 
@@ -66,26 +58,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding-left: 134px;
+  padding-right: 138px;
   background-color: var(--olive);
   color: var(--beige);
   overflow: hidden;
-
-  &-inner {
-    max-width: 456px;
-    margin: 160px auto 0;
-  }
-
-  &:before {
-    position: absolute;
-    display: block;
-    content: '';
-    background-image: url('../assets/twig.svg');
-    width: 337px;
-    height: 169px;
-    transform: rotate(200deg) scale(1, -1);
-    bottom: -45px;
-    right: -20px;
-  }
 
   &-title {
     font-family: 'Cormorant', serif;
@@ -101,5 +79,17 @@
     margin-top: 0;
     font-size: 20px;
     line-height: 35px;
+  }
+
+  &:before {
+    position: absolute;
+    display: block;
+    content: '';
+    background-image: url('../assets/twig-l.svg');
+    width: 298px;
+    height: 676px;
+    transform: rotate(-67.37deg) scale(0.6);
+    bottom: -43%;
+    right: -10%;
   }
 }
