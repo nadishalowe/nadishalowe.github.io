@@ -1,5 +1,5 @@
 .projects {
-  padding: 160px 20px;
+  padding: 0 20px 160px;
   background-color: var(--darkGrey);
   color: var(--beige);
 
@@ -8,6 +8,7 @@
     gap: 134px;
     grid-template-columns: auto auto;
     padding-left: calc(138px - 20px);
+    padding-top: 160px;
     margin-bottom: 60px;
   }
 
@@ -26,26 +27,58 @@
     line-height: 35px;
   }
 
-  &-content-wrapper {
-    border: 3px solid var(--borderGrey);
-    border-radius: 8px;
+  
 
-    &--doubleRCafe {
-      display: flex;
-      gap: 30px;
-      padding: 37px;
+  &-content {
+    &-double {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 16px;
 
-      &--single {
-        padding: 11px 17px;
+      &--gap {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 20px;
       }
+    }
 
-      img {
-        border-radius: 8px;
+    &-wrapper {
+      border: 3px solid var(--borderGrey);
+      border-radius: 8px;
+  
+      &--doubleRCafe {
+        display: flex;
+        gap: 30px;
+        padding: 37px;
+  
+        &--single {
+          padding: 11px 17px;
+        }
+  
+        img {
+          border-radius: 8px;
+        }
+      }
+  
+      &--museum {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &--full {
+          min-height: 662px;
+        }
       }
     }
   }
 
   &-view {
+    &--museum {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
     &--doubleRCafe {
       display: flex;
       gap: 16px;
