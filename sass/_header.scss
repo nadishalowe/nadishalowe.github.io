@@ -67,7 +67,7 @@
     content: '';
     left: 50%;
     bottom: 46px;
-    transform: translateX(-50px);
+    transform: translateX(-50%);
     height: 70px;
     width: 16px;
     background-image: url('../assets/arrow.svg');
@@ -82,7 +82,7 @@
     content: '';
     width: 298px;
     height: 676px;
-    background-image: url('../assets/twig-l.svg');
+    background-image: url('../assets/twig.svg');
     background-size: contain;
     opacity: 0;
   }

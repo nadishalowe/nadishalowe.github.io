@@ -5,9 +5,52 @@
 
   &-wrapper-title {
     display: grid;
+    gap: 134px;
     grid-template-columns: auto auto;
-    gap: 50px;
     padding-left: calc(138px - 20px);
     margin-bottom: 60px;
+  }
+
+  &-title {
+    width: 338px;
+    margin: 0;
+    font-size: 50px;
+    line-height: 60px;
+    font-family: 'Cormorant', serif;
+    font-weight: 500;
+  }
+
+  &-text {
+    width: 810px;
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  &-content-wrapper {
+    border: 3px solid var(--borderGrey);
+    border-radius: 8px;
+
+    &--doubleRCafe {
+      display: flex;
+      gap: 30px;
+      padding: 37px;
+
+      &--single {
+        padding: 11px 17px;
+      }
+
+      img {
+        border-radius: 8px;
+      }
+    }
+  }
+
+  &-view {
+    &--doubleRCafe {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }
