@@ -10,6 +10,22 @@
     padding-left: calc(138px - 20px);
     padding-top: 160px;
     margin-bottom: 60px;
+
+    &--twig {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 298px;
+        height: 676px;
+        top: -70%;
+        left: -14%;
+        background-image: url('../assets/twig.svg');
+        transform: rotate(153.15deg) scale(0.4);
+      }
+    }
   }
 
   &-title {
