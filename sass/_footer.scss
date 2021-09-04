@@ -1,12 +1,25 @@
 .footer {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 50px 138px;
   background-color: var(--olive);
   color: var(--beige);
 
+  &:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 298px;
+    height: 676px;
+    top: -30%;
+    right: 0;
+    background-image: url('../assets/twig.svg');
+    transform: rotate(-69.69deg);
+}
+
   &-title {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-top: 0;
     font-family: 'Cormorant', serif;
     font-weight: 500;
@@ -15,11 +28,11 @@
   }
 
   &-link {
-    font-style: 20px;
+    font-size: 20px;
     line-height: 24px;
 
     &:first-of-type {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
   }
 
@@ -27,7 +40,7 @@
   &-social {
     display: flex;
     gap: 25px;
-    margin-top: 30px;
+    margin-top: 20px;
     text-transform: uppercase;
   }
 }

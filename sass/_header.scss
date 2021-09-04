@@ -58,6 +58,8 @@
       border-radius: 50%;
       background-color: var(--olive);
       z-index: -1;
+      opacity: 0;
+    animation: fadeIn 800ms ease-in 2500ms both;
     }
   }
 
@@ -72,7 +74,7 @@
     width: 16px;
     background-image: url('../assets/arrow.svg');
     opacity: 0;
-    animation: fadeIn 700ms ease-in 2750ms both, arrowBounce 1000ms infinite;
+    animation: fadeIn 700ms ease-in 3200ms both, arrowBounce 1000ms infinite;
   }
 
   &:before,
