@@ -5,6 +5,7 @@
   padding: 50px 138px;
   background-color: var(--olive);
   color: var(--beige);
+  font-family: 'Helvetica Neue', sans-serif;
 
   &:before {
     position: absolute;
@@ -29,7 +30,7 @@
 
   &-link {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 30px;
 
     &:first-of-type {
       margin-bottom: 10px;
