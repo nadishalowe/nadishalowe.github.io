@@ -1,17 +1,16 @@
 .about {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 705px 735px;
 }
 
 .photo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--lightGrey);
-  padding: 79px 0;
+  padding: 100px 0 100px 221px;
+  font-family: 'Cormorant';
 
   &-inner {
     position: relative;
+    width: 333px;
   }
 
   &-imgage {
@@ -19,11 +18,17 @@
   }
 
   &-line {
-    width: 357px;
     height: 3px;
     background-color: var(--darkGrey);
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-radius: 2px;
+
+    &--surname {
+      width: 349px;
+    }
+
+    &--name {
+      width: 365px;
+    }
   }
 
   &-surname,
@@ -34,7 +39,7 @@
     gap: 21px;
     height: 61px;
     font-family: 'Cormorant';
-    font-weight: 600;
+    font-weight: 500;
     font-size: 50px;
     line-height: 60px;
     color: var(--darkGrey);
@@ -59,11 +64,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 134px;
-  padding-right: 138px;
+  padding-left: 125px;
+  padding-right: 164px;
   background-color: var(--olive);
   color: var(--beige);
   overflow: hidden;
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
 
   &-title {
     font-family: 'Cormorant', serif;
