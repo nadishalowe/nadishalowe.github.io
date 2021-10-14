@@ -3,4 +3,67 @@
   padding: 200px 165px;
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+
+  &-museum {
+    width: 100%;
+    background-color: var(--olive);
+    padding: 50px 95px;
+
+    &-images {
+      display: grid;
+      grid-template-columns: 257px 255px 350px;
+      gap: 30px;
+
+      &-double {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+
+    p {
+      color: var(--beige);
+    }
+  }
+
+  &-app {
+    width: 540px;
+    padding: 50px 71px 78px;
+    transition: transform 200ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.04);
+    }
+
+    &-images {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--double-r {
+      background-color: var(--lightGrey);
+
+      p {
+        color: var(--darkGrey);
+      }
+    }
+
+    &--meet {
+      background-color: var(--olive);
+
+      p {
+        color: var(--beige);
+      }
+    }
+  }
+
+  &-title {
+    margin-top: 32px;
+    margin-bottom: 0;
+    font-family: "Helvetica Neue";
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 400;
+  }
 }
