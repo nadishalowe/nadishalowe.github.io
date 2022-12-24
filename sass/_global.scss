@@ -4,6 +4,9 @@
   --olive: #7F8B81;
   --lightGrey: #DDDEDC;
   --borderGrey: #ADAAA4;
+
+  --black: #1E1E1E;
+  --pink: #F50294;
 }
 
 html {
@@ -21,12 +24,8 @@ a {
 
 
 body {
-  font-family: 'Montserrat', 'Robotto', sans-serif;
-  font-weight: 300;
+  min-width: 1440px;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
-.body-wrapper {
-  width: 1440px;
-  margin: 0 auto;
-  overflow: hidden;
-}

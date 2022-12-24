@@ -6,36 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="icon" type="image/png" href="assets/favicon.png">
-  <title>Nadisha Lowe</title>
+  <title>Nadisha Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <div class="body-wrapper">
     <!-- header -->
-    <div class="header">
-      <header class="header-inner">
-        <div class="header-links header-links--social">
-          <a href="https://t.me/Nadishalowe" target="_blank">Telegram</a>
-          <a href="https://www.behance.net/nadisha667f36" target="_blank">Behance</a>
-        </div>
-        <div class="header-links header-links--site">
-          <a href="#about">Обо мне</a>
-          <a href="#projects">Проекты</a>
-          <a href="#contacts">Контакты</a>
-        </div>
-      </header>
-      
-      <div class="header-logo">
-        <p class="header-logo-subtitle">Антонова Надежда</p>
-        <h1 class="header-logo-title">UI/UX DESIGNER</h1>
+    <header class="header">
+      <div class="header__menu"></div>
+      <div class="header__content">
+        <p class="header__title">
+          <span class="header__title__tags">
+            <span class="tag">UI/UX</span>
+            <span class="tag">дизайнер</span>
+          </span>
+          NADISHA
+        </p>
       </div>
-      
-  
-      <a href="#about" class="header-arrow"></a>
+      <a href="#" class="header__btn btn btn--primary">Обсудить проект</a>
+    </header>
+
+    <!-- line -->
+    <div class="marquee3k" data-speed="2">
+      <div class="line">
+        <div class="line__wrapper">
+          <span class="line__text">NADIЗАЙНИЛА</span>
+          <span class="line__text">NADIЗАЙНИЛА</span>
+          <span class="line__text">NADIЗАЙНИЛА</span>
+          <span class="line__text">NADIЗАЙНИЛА</span>
+        </div>
+      </div>
     </div>
-    <!-- about -->
-    <div class="about" id="about">
+
+
+    <!-- <div class="about" id="about">
       <div class="photo">
         <div class="photo-inner">
           <span class="photo-surname">
@@ -70,7 +78,6 @@
         </p>
       </div>
     </div>
-    <!-- projects -->
     <div class="projects">
       <div class="projects-museum">
         <div class="projects-museum-images">
@@ -103,7 +110,6 @@
         <p class="projects-title">Мобильное приложение с&nbsp;интересными событиями</p>
       </a>
     </div>
-    <!-- footer -->
     <footer class="footer" id="contacts">
       <h2 class="footer-title">Связаться со мной</h2>
       <a href="mailto:nadishalowe22@yandex.ru" class="footer-link link-mail">nadishalowe22@yandex.ru</a>
@@ -113,7 +119,11 @@
         <a href="https://www.behance.net/nadisha667f36" target="_blank">behance</a>
         <a href="assets/resume.jpg" target="_blank" download="AntonovaNA_CV">Резюме</a>
       </div>
-    </footer>
+    </footer> -->
   </div>
+  <script src='https://cdn.jsdelivr.net/npm/marquee3000@1.0.8/marquee3k-noUMD.min.js'></script>
+  <script>
+    Marquee3k.init();
+  </script>
 </body>
 </html>
