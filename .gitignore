@@ -6,6 +6,6 @@ assets/.DS_Store
 *.pdf
 *.psd
 *.sublime*
-node_modules/
-build/
+/node_modules
+/build
 Thumbs.db
