@@ -1,1 +1,1 @@
-export const Badge = () => <div>badge</div>
+export const Badge = () => <div>New badge</div>
