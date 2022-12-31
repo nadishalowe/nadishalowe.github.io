@@ -1,3 +1,13 @@
+import { PropsWithChildren } from 'react';
+
 import { ButtonWrappeer } from './Button.styled';
 
-export const Button = () => <ButtonWrappeer>button</ButtonWrappeer>;
+type ButtonProps = {
+  href?: string;
+}
+
+export const Button = ({ href, children }: PropsWithChildren<ButtonProps>) => {
+  const tag = href ? 'a' : 'button';
+
+  return <ButtonWrappeer href={href} as={tag}>{children}</ButtonWrappeer>
+};
