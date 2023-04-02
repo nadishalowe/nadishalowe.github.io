@@ -5,7 +5,7 @@ import { Footer } from '../Blocks/Footer/Footer';
 export const HomePage = () => {
   return (
     <div>
-      Nadishalowe design
+      Nadishalowe new design
       <Footer />
     </div>
   );
